@@ -2,8 +2,8 @@
  I created crud operations Application
 
  1) Clone the repo in vs code
- 2) Go the the terminal and Install Dependencies by <h>npm install<h> 
- 3) In the Terminal App type <h>"npm run start"<h> to run the app in local host
+ 2) Go the the terminal and Install Dependencies by <h1>npm install<h1> 
+ 3) In the Terminal App type <h1>"npm run start"<h1> to run the app in local host
 
  contact :
  <h1>8885444898
