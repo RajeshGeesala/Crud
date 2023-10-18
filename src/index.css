@@ -38,16 +38,19 @@ form {
 }
 
 body {
-    background-color: rgb(77, 111, 140);
+    background-color: rgb(64, 70, 75);
 }
-.table {
-    background-color: black;   
+
+td {
+    background-color: black;
 }
 
 .btn {
         color: black;
+        background-color: rgb(242, 124, 55);
     text-decoration: none;
     margin-left: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .btn  :hover {
    color: bisque; 
