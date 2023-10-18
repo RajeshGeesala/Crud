@@ -6,5 +6,5 @@
  3) In the Terminal App type <h>"npm run start"<h> to run the app in local host
 
  contact :
- <h1>8885444898.<h1>
+ <h1>8885444898
  <h3> rajesh.geesala8885@gmail.com <h3>
