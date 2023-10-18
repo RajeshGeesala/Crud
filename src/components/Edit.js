@@ -41,14 +41,14 @@ const Edit = () => {
     return (
         <div>  <center>
             <Form onSubmit={submitHandler}>
-            <Form.Group className="form-group">
-                <Form.Control type="text" name="name" placeholder="Update name" value={name} onChange={onchange} /><br></br>
-                <Form.Control type="text" name="job" placeholder="update job" value={job} onChange={onchange} /><br></br>
-                <Form.Control type="email" name="email"  placeholder="update email" value={email} onChange={onchange} /><br></br>
-                <Button type="submit">Update</Button>     <Button> <Link to="/" className="link"> Back </Link>   </Button>
-                </Form.Group> 
+                <Form.Group className="form-group">
+                    <Form.Control type="text" name="name" placeholder="Update name" value={name} onChange={onchange} /><br></br>
+                    <Form.Control type="text" name="job" placeholder="update job" value={job} onChange={onchange} /><br></br>
+                    <Form.Control type="email" name="email" placeholder="update email" value={email} onChange={onchange} /><br></br>
+                    <Button type="submit">Update</Button>     <Button> <Link to="/" className="link"> Back </Link>   </Button>
+                </Form.Group>
             </Form>
-            </center>
+        </center>
         </div>)
 }
 

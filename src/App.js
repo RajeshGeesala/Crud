@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import {  Outlet, RouterProvider, createBrowserRouter } from "react-router-dom";
+import { Outlet, RouterProvider, createBrowserRouter } from "react-router-dom";
 import Home from "./components/Home";
 import Edit from "./components/Edit";
 import Update from "./components/Update";
@@ -10,11 +10,11 @@ import Read from "./components/Read";
 
 const App = () => {
     return (
-        <> 
-          <center className="app"><h1>CRUD OPERATIONS</h1></center> 
-        <Outlet>    
-        </Outlet>
-         </>
+        <>
+            <center className="app"><h1>CRUD OPERATIONS</h1></center>
+            <Outlet>
+            </Outlet>
+        </>
     )
 };
 

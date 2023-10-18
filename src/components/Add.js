@@ -15,7 +15,7 @@ const Add = () => {
     const Onchange = (event) => {
         SetAddUser({ ...AddUser, [event.target.name]: event.target.value })
     };
-     navigate = useNavigate()
+    navigate = useNavigate()
     const submitevent = (event) => {
         event.preventDefault();
         SetAddUser({
@@ -23,17 +23,17 @@ const Add = () => {
             email: "",
             job: "",
         })
-           console.log(AddUser);
-           axios.post(dataurl , AddUser).then( navigate("/")).catch(console.error("error")) ;
-           alert("User Added Succesfully")
+        console.log(AddUser);
+        axios.post(dataurl, AddUser).then(navigate("/")).catch(console.error("error"));
+        alert("User Added Succesfully")
     }
     return (
         <>   <center>
-            
+
             <Form onSubmit={submitevent}>
                 <Form.Group className="form-group">
                     <div className="form-border">
-                    <h1>Add Users </h1>
+                        <h1>Add Users </h1>
                         <Form.Control type="text" placeholder="Enter Name" name="name" value={name} onChange={Onchange} /> <br />
                         <Form.Control type="email" placeholder="Enter email" name="email" value={email} onChange={Onchange} /><br />
                         <Form.Control type="text" placeholder="Enter Enter their Job" name="job" value={job} onChange={Onchange} /><br />
