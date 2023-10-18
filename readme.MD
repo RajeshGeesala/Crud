@@ -5,5 +5,5 @@
  2) Go the the terminal and Install Dependencies by NPM install 
  3) In the Terminal App type "npm run start" to run the app in local host
 
- Regards 
+ contact :
  8885444898
