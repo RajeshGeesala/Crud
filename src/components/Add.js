@@ -36,7 +36,7 @@ const Add = () => {
                     <h1>Add Users </h1>
                         <Form.Control type="text" placeholder="Enter Name" name="name" value={name} onChange={Onchange} /> <br />
                         <Form.Control type="email" placeholder="Enter email" name="email" value={email} onChange={Onchange} /><br />
-                        <Form.Control type="text" placeholder="Enter Enter their Jon" name="job" value={job} onChange={Onchange} /><br />
+                        <Form.Control type="text" placeholder="Enter Enter their Job" name="job" value={job} onChange={Onchange} /><br />
                     </div>
                 </Form.Group>
                 <Button type="submit">  Click Here To Submit  </Button>
