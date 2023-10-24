@@ -17,8 +17,8 @@ const Read = () => {
             SetReadData(Data.data)
 
         } catch {
-           //error handling 
-           console.error(": this is error")
+            //error handling 
+            console.error(": this is error")
         }
     }
     return (<div>

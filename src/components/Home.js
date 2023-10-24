@@ -34,36 +34,36 @@ const Home = () => {
 
     //filter function 
     const FilterHandle = (event) => {
-        setRecords(Data.filter(f  => f.job.toLowerCase().includes(event.target.value.toLowerCase())))
+        setRecords(Data.filter(f => f.job.toLowerCase().includes(event.target.value.toLowerCase())))
     }
     return (
         <>
-           
-               <center>
+
+            <center>
                 <div className="d-flex top">
                     <button className="btn btn-primary"> <Link to="/add" className="link" > Add User</Link></button>
                     <input type="search" placeholder="search people based on jobs" onChange={FilterHandle} className="form-control" /></div>
-                    </center>
-                <Table className="table" striped bordered hover>
-                    <thead > <tr><th>S.no</th><th>Name</th><th> Email </th> <th> Designation</th> <th>Modify</th> </tr> </thead>
-                    <tbody>
-                        {
-                            Records.map((data) => (<tr key={data.id}>
-                                <td>{data.id}</td>
-                                <td>{data.name}</td>
-                                <td>{data.email}</td>
-                                <td>{data.job}</td>
-                                <td>
-                                    <Button><Link className="link" to={"/edit/" + data.id}> Edit</Link> </Button>
-                                    <Button><Link className="link" to={"/read/" + data.id}> Read</Link></Button>
-                                    <Button className="btn btn-danger" onClick={() => {
-                                        Deletedatahandler(data.id)
-                                    }} >  <FontAwesomeIcon icon={faTrash}></FontAwesomeIcon>  </Button> </td>
-                            </tr>))
-                        }
-                    </tbody>
-                </Table>
-         
+            </center>
+            <Table className="table" striped bordered hover>
+                <thead > <tr><th>S.no</th><th>Name</th><th> Email </th> <th> Designation</th> <th>Modify</th> </tr> </thead>
+                <tbody>
+                    {
+                        Records.map((data) => (<tr key={data.id}>
+                            <td>{data.id}</td>
+                            <td>{data.name}</td>
+                            <td>{data.email}</td>
+                            <td>{data.job}</td>
+                            <td>
+                                <Button><Link className="link" to={"/edit/" + data.id}> Edit</Link> </Button>
+                                <Button><Link className="link" to={"/read/" + data.id}> Read</Link></Button>
+                                <Button className="btn btn-danger" onClick={() => {
+                                    Deletedatahandler(data.id)
+                                }} >   <FontAwesomeIcon icon={faTrash}></FontAwesomeIcon>  </Button> </td>
+                        </tr>))
+                    }
+                </tbody>
+            </Table>
+
         </>
     )
 
