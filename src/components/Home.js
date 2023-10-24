@@ -10,7 +10,7 @@ import { faTrash } from "@fortawesome/free-solid-svg-icons";
 //  import { Link } from "react-router-dom";
 const Home = () => {
     const [Data, setData] = useState([])
-    const [Records, setRecords] = useState([])
+    const [Filters, setFilters] = useState([])
     useEffect(() => {
         GetData();
     }, [])
@@ -19,8 +19,8 @@ const Home = () => {
         try {
             const GetDataApi = await axios.get(dataurl);
             setData(GetDataApi.data);
-            console.log(GetDataApi)
-            setRecords(GetDataApi.data)
+            // console.log(GetDataApi)
+            setFilters(GetDataApi.data)
         }
         catch {
             console.error("api error")
@@ -34,7 +34,7 @@ const Home = () => {
 
     //filter function 
     const FilterHandle = (event) => {
-        setRecords(Data.filter(f => f.job.toLowerCase().includes(event.target.value.toLowerCase())))
+        setFilters(Data.filter(f => f.job.toLowerCase().includes(event.target.value.toLowerCase())))
     }
     return (
         <>
@@ -48,7 +48,7 @@ const Home = () => {
                 <thead > <tr><th>S.no</th><th>Name</th><th> Email </th> <th> Designation</th> <th>Modify</th> </tr> </thead>
                 <tbody>
                     {
-                        Records.map((data) => (<tr key={data.id}>
+                        Filters.map((data) => (<tr key={data.id}>
                             <td>{data.id}</td>
                             <td>{data.name}</td>
                             <td>{data.email}</td>
